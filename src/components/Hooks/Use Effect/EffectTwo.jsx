@@ -9,7 +9,8 @@ const EffectTwo = () => {
     console.log(data);
     const results = await data.json();
     console.log(results);
-    setResult(results);
+    setResult
+    (results);
   };
   useEffect(() => {
     handleApiFetch();

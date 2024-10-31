@@ -19,6 +19,10 @@ import Sidebar from "./components/Hooks/Usestate/Sidebar";
 import StateFour from "./components/Hooks/Usestate/StateFour";
 import EffectOne from "./components/Hooks/Use Effect/EffectOne";
 import EffectTwo from "./components/Hooks/Use Effect/EffectTwo";
+import ReducerOne from "./components/Hooks/Usereducer/ReducerOne";
+import Login from "./components/Login";
+import Profile from "./components/Profile";
+import UserContextprovider from "./components/Hooks/Usecontext/UserContextprovider";
 const App = () => {
   const istue = false;
   const handleClick = () => {
@@ -65,6 +69,7 @@ const App = () => {
       >
         Click me !
       </Button>
+      <Button />
       <Events />
       <StateOne />
       <StateTwo />
@@ -74,6 +79,11 @@ const App = () => {
       <StateFour />
       <EffectOne />
       <EffectTwo />
+      <ReducerOne />
+      <UserContextprovider>
+      <Login />
+      <Profile />
+      </UserContextprovider>
     </div>
   );
 };
